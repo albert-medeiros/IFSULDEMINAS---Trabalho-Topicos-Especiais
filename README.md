@@ -6,9 +6,13 @@ desenvolvimento de parte de uma aplicação Web (BackEnd).
 
 Etapas 1: 
 
+    - Descrição geral da aplicação a qual o grupo se propõe a desenvolver
+    - Requisitos funcionais da aplicação
+    - Diagrama de classes UML elaborado a partir dos requisitos funcionais levantados.
+
 Etapas 2: 
     
     - Criar um repositório no GitHub
     - Criar um projeto Spring Boot para implementação da aplicação que foi proposta na Etapa 1
-    - Implementar as entidades (classes) e os relacionamentos entre as classes, conforme diagrama de classes elaborado na Etapa 1;
+    - Implementar as entidades (classes) e os relacionamentos entre as classes, conforme diagrama de classes elaborado na Etapa 1
     - Fazer no projeto as configurações e implementações necessárias para conexão e manipulação de banco de dados utilizando Hibernate, JPA e MySQL
