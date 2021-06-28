@@ -9,6 +9,7 @@ public class Banco_de_horas {
 
     @Temporal(TemporalType.TIME)
     private double total_de_horas;
+    private Horas_usadas horas_gastas;
 
     public Banco_de_horas(){};
 
