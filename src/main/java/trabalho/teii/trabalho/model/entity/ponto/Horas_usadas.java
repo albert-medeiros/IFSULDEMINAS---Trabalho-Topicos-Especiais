@@ -1,7 +1,9 @@
 package trabalho.teii.trabalho.model.entity.ponto;
 
+import javax.persistence.Entity;
 import java.util.Date;
 
+@Entity
 public class Horas_usadas {
 
     private Date data;
