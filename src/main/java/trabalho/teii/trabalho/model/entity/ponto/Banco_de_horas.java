@@ -1,5 +1,8 @@
 package trabalho.teii.trabalho.model.entity.ponto;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Banco_de_horas {
 
     private double total_de_horas;

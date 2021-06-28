@@ -1,5 +1,8 @@
 package trabalho.teii.trabalho.model.entity;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Usuario {
 
     private String nome;
