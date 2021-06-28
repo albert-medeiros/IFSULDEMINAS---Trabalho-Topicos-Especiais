@@ -1,10 +1,15 @@
 package trabalho.teii.trabalho.model.entity;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 @Entity
 public class Usuario {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private String nome;
     private int senha;
     private int admin;
