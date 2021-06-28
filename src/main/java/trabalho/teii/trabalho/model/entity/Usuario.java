@@ -23,10 +23,13 @@ public class Usuario {
     @JoinColumn(name = "usuario_id")
     private Set<Ponto> pontos;
 
+    @OneToOne
+    private Banco_de_horas banco_de_horas;
+
     public Usuario() {}
 
     //Atributos
-    public Usuario(String nome, int senha, int admin, double tempo_de_almoco, double carga_de_trabalho) {
+    public Usuario(String nome, int senha, int admin, double tempo_de_almoco, double carga_de_trabalho, Banco_de_horas banco_de_horas) {
         this.nome = nome;
         this.senha = senha;
         this.admin = admin;
@@ -34,6 +37,7 @@ public class Usuario {
         this.carga_de_trabalho = carga_de_trabalho;
 
         this.pontos = new LinkedHashSet<Ponto>();
+        this.banco_de_horas = banco_de_horas;
     }
 
 
