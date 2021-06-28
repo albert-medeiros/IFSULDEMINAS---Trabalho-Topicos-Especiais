@@ -1,9 +1,6 @@
 package trabalho.teii.trabalho.model.entity.ponto;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Date;
 
 @Entity
@@ -11,7 +8,10 @@ public class Ponto {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+
+    @Temporal(TemporalType.DATE)
     private Date data;
+    @Temporal(TemporalType.TIME)
     private double horario;
 
     public Ponto() {}
