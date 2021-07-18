@@ -1,6 +1,7 @@
 package trabalho.teii.trabalho.model.entity.ponto;
 
 import javax.persistence.*;
+import java.sql.Time;
 import java.util.Date;
 import java.util.LinkedHashSet;
 import java.util.Set;
@@ -13,8 +14,9 @@ public class Ponto {
 
     @Temporal(TemporalType.DATE)
     private Date data;
-    @Temporal(TemporalType.TIME)
-    private double horario;
+
+    //@Temporal(TemporalType.TIME)
+    private Time horario;
 
     //Conjuntos de Agregação
     @OneToMany
@@ -23,7 +25,7 @@ public class Ponto {
 
     public Ponto() {}
 
-    public Ponto(Date data, double horario) {
+    public Ponto(Date data, Time horario) {
         this.data = data;
         this.horario = horario;
 
@@ -38,11 +40,11 @@ public class Ponto {
         this.data = data;
     }
 
-    public double getHorario() {
+    public Time getHorario() {
         return horario;
     }
 
-    public void setHorario(double horario) {
+    public void setHorario(Time horario) {
         this.horario = horario;
     }
 }

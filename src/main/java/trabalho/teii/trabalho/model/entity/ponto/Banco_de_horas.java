@@ -7,15 +7,14 @@ public class Banco_de_horas {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
 
-    @Temporal(TemporalType.TIME)
-    private double total_de_horas;
+    private int total_de_horas;
 
     @OneToOne
     private Horas_usadas horas_gastas;
 
     public Banco_de_horas(){};
 
-    public Banco_de_horas(double total_de_horas, Horas_usadas horas_gastas){
+    public Banco_de_horas(int total_de_horas, Horas_usadas horas_gastas){
         this.total_de_horas = total_de_horas;
         this.horas_gastas = horas_gastas;
     }
@@ -24,7 +23,7 @@ public class Banco_de_horas {
         return total_de_horas;
     }
 
-    public void setBanco_de_horas(double total_de_horas){
+    public void setBanco_de_horas(int total_de_horas){
         this.total_de_horas = total_de_horas;
     }
 }

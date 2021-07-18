@@ -1,6 +1,7 @@
 package trabalho.teii.trabalho.model.entity.ponto;
 
 import javax.persistence.*;
+import java.sql.Time;
 import java.util.Date;
 
 @Entity
@@ -10,13 +11,13 @@ public class Horas_usadas {
 
     @Temporal(TemporalType.DATE)
     private Date data;
-    @Temporal(TemporalType.TIME)
-    private double horas_usadas;
 
+    //@Temporal(TemporalType.TIME)
+    private Time horas_usadas;
 
     public Horas_usadas() {}
 
-    public Horas_usadas(Date data, double horas_usadas) {
+    public Horas_usadas(Date data, Time horas_usadas) {
         this.data = data;
         this.horas_usadas = horas_usadas;
     }
@@ -29,11 +30,11 @@ public class Horas_usadas {
         this.data = data;
     }
 
-    public double getHoras_usadas() {
+    public Time getHoras_usadas() {
         return horas_usadas;
     }
 
-    public void setHoras_usadas(double horas_usadas) {
+    public void setHoras_usadas(Time horas_usadas) {
         this.horas_usadas = horas_usadas;
     }
 }
