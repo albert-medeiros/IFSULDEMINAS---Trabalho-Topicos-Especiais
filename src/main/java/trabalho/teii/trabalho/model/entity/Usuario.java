@@ -12,6 +12,7 @@ public class Usuario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
     private String nome;
     private int senha;
     private int admin;
