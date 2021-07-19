@@ -32,7 +32,8 @@ public class Usuario {
     public Usuario() {}
 
     //Atributos
-    public Usuario(String nome, int senha, int admin, double tempo_de_almoco, double carga_de_trabalho, Banco_de_horas banco_de_horas) {
+    public Usuario(long id,String nome, int senha, int admin, double tempo_de_almoco, double carga_de_trabalho, Banco_de_horas banco_de_horas) {
+        this.id = id;
         this.nome = nome;
         this.senha = senha;
         this.admin = admin;
@@ -43,6 +44,9 @@ public class Usuario {
         this.banco_de_horas = banco_de_horas;
     }
 
+    //Get Set id
+    public long getId() { return id; }
+    public void setId(long id) { this.id = id; }
 
     //Get Set Nome
     public String getNome() {
