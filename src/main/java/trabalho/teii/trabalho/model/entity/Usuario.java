@@ -1,5 +1,6 @@
 package trabalho.teii.trabalho.model.entity;
 
+import com.sun.istack.NotNull;
 import trabalho.teii.trabalho.model.entity.ponto.Banco_de_horas;
 import trabalho.teii.trabalho.model.entity.ponto.Ponto;
 
@@ -13,6 +14,7 @@ public class Usuario {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
+    @NotNull
     private String nome;
     private int senha;
     private int admin;
