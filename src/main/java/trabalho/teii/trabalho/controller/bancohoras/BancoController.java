@@ -18,6 +18,7 @@ public class BancoController {
     public BancoController(BancoRepository bancoRepository){
         this.bancoRepository = bancoRepository;
     }
+
     @GetMapping
     public List<Usuario> list(){
         return bancoRepository.findAll();
@@ -52,3 +53,4 @@ public class BancoController {
     }
 
 }
+
