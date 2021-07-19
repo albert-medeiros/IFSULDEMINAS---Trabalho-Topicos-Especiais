@@ -11,6 +11,7 @@ public class Ponto {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
 
     @Temporal(TemporalType.DATE)
     private Date data;
