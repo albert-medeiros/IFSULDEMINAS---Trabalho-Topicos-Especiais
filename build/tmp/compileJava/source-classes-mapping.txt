@@ -10,13 +10,17 @@ trabalho/teii/trabalho/model/repositories/PontoRepository.java
  trabalho.teii.trabalho.model.repositories.PontoRepository
 trabalho/teii/trabalho/controller/bancohoras/HorasUsadasController.java
  trabalho.teii.trabalho.controller.bancohoras.HorasUsadasController
-trabalho/teii/trabalho/controller/bancohoras/BancoController.java
- trabalho.teii.trabalho.controller.bancohoras.BancoController
-trabalho/teii/trabalho/model/entity/ponto/Horas_usadas.java
- trabalho.teii.trabalho.model.entity.ponto.Horas_usadas
-trabalho/teii/trabalho/model/entity/ponto/Banco_de_horas.java
- trabalho.teii.trabalho.model.entity.ponto.Banco_de_horas
 trabalho/teii/trabalho/model/repositories/HorasUsadasRepository.java
  trabalho.teii.trabalho.model.repositories.HorasUsadasRepository
+trabalho/teii/trabalho/model/entity/ponto/Horas_usadas.java
+ trabalho.teii.trabalho.model.entity.ponto.Horas_usadas
+trabalho/teii/trabalho/model/repositories/BancoHorasRepository.java
+ trabalho.teii.trabalho.model.repositories.BancoHorasRepository
+trabalho/teii/trabalho/controller/bancohoras/BancoController.java
+ trabalho.teii.trabalho.controller.bancohoras.BancoController
+trabalho/teii/trabalho/model/entity/ponto/Banco_de_horas.java
+ trabalho.teii.trabalho.model.entity.ponto.Banco_de_horas
 trabalho/teii/trabalho/model/entity/Usuario.java
  trabalho.teii.trabalho.model.entity.Usuario
+trabalho/teii/trabalho/controller/bancohoras/BancoHorasController.java
+ trabalho.teii.trabalho.controller.bancohoras.BancoHorasController
