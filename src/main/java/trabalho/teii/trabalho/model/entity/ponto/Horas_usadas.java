@@ -8,6 +8,7 @@ import java.util.Date;
 public class Horas_usadas {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
 
     @Temporal(TemporalType.DATE)
     private Date data;

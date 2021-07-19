@@ -6,6 +6,7 @@ import trabalho.teii.trabalho.model.repositories.PontoRepository;
 
 import java.util.List;
 
+@RestController
 @RequestMapping("/pontos")
 public class PontoController {
     //CRUDs
