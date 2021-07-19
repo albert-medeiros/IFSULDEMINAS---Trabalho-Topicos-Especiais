@@ -6,7 +6,7 @@ import javax.persistence.*;
 public class Banco_de_horas {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-
+    private long id;
     private int total_de_horas;
 
     @OneToOne
