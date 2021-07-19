@@ -18,7 +18,6 @@ public class HorasUsadasController {
     //Reads
     //Método List
     private HorasUsadasRepository horasUsadasRepository;
-
     public HorasUsadasController(HorasUsadasRepository horasUsadasRepository) {
         this.horasUsadasRepository = horasUsadasRepository;
     }
