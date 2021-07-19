@@ -33,4 +33,23 @@ public class BancoController {
     public Usuario save(@RequestBody Usuario usuario){
         return bancoRepository.save(usuario);
     }
+
+    //Método Update
+    @PutMapping("/id")
+    public Usuario update(@PathVariable Long id, @RequestBody Usuario usuario){
+        Usuario usuarioAux = bancoRepository.getById(id);
+        usuarioAux.setNome(usuario.getNome());
+        usuarioAux.setAdmin(usuario.getAdmin());
+        usuarioAux.setCarga_de_trabalho(usuario.getCarga_de_trabalho());
+        usuarioAux.setTempo_de_almoco(usuarioAux.getCarga_de_trabalho());
+        return bancoRepository.save(usuarioAux);
+    }
+
+    //Método Delete
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable Long id){
+        bancoRepository.deleteById(id);
+    }
+
 }
+
