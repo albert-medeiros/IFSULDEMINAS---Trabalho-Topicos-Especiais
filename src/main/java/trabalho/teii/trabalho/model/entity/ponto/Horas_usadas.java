@@ -23,18 +23,18 @@ public class Horas_usadas {
         this.horas_usadas = horas_usadas;
     }
 
+    //Get Set Data
     public Date getData() {
         return data;
     }
-
     public void setData(Date data) {
         this.data = data;
     }
 
+    //Get Set Horas_usadas
     public Time getHoras_usadas() {
         return horas_usadas;
     }
-
     public void setHoras_usadas(Time horas_usadas) {
         this.horas_usadas = horas_usadas;
     }

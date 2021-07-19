@@ -33,18 +33,18 @@ public class Ponto {
         this.banco_horas = new LinkedHashSet<Banco_de_horas>();
     }
 
+    //Get Set Data
     public Date getData() {
         return data;
     }
-
     public void setData(Date data) {
         this.data = data;
     }
 
+    //Get Set Horario
     public Time getHorario() {
         return horario;
     }
-
     public void setHorario(Time horario) {
         this.horario = horario;
     }
