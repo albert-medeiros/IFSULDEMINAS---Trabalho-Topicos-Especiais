@@ -1,9 +1,6 @@
 package trabalho.teii.trabalho.controller.bancohoras;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import trabalho.teii.trabalho.model.entity.Usuario;
 import trabalho.teii.trabalho.model.repositories.BancoRepository;
 
@@ -30,5 +27,10 @@ public class BancoController {
     @GetMapping("/{id}")
     public Usuario show(@PathVariable Long id){
         return bancoRepository.getById(id);
+    }
+
+    //Método Save
+    public Usuario save(@RequestBody Usuario usuario){
+        return bancoRepository.save(usuario);
     }
 }
