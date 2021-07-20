@@ -1,10 +1,8 @@
 package trabalho.teii.trabalho.controller.bancohoras;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import trabalho.teii.trabalho.model.entity.ponto.Banco_de_horas;
+import trabalho.teii.trabalho.model.entity.ponto.Ponto;
 import trabalho.teii.trabalho.model.repositories.BancoHorasRepository;
 
 import java.util.List;
@@ -30,4 +28,16 @@ public class BancoHorasController {
     public Banco_de_horas show(@PathVariable Long id){
         return bancoHorasRepository.getById(id);
     }
+
+    //Create
+    //Método Save
+    public Banco_de_horas save(@RequestBody Banco_de_horas banco_de_horas){return bancoHorasRepository.save(banco_de_horas);    }
+
+    //Delete
+    //Método Excluir
+    @DeleteMapping("/{id}")
+    public void delete (@PathVariable Long id){
+        bancoHorasRepository.deleteById(id);
+    }
+
 }

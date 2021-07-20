@@ -2,7 +2,7 @@ package trabalho.teii.trabalho.controller.bancohoras;
 
 import org.springframework.web.bind.annotation.*;
 import trabalho.teii.trabalho.model.entity.Usuario;
-import trabalho.teii.trabalho.model.repositories.BancoRepository;
+import trabalho.teii.trabalho.model.repositories.UsuarioRepository;
 
 import java.util.List;
 
@@ -13,43 +13,43 @@ public class UsuarioController {
 
     //READ
     //Método List
-    private BancoRepository bancoRepository;
+    private UsuarioRepository usuarioRepository;
 
-    public UsuarioController(BancoRepository bancoRepository){
-        this.bancoRepository = bancoRepository;
+    public UsuarioController(UsuarioRepository usuarioRepository){
+        this.usuarioRepository = usuarioRepository;
     }
 
     @GetMapping
     public List<Usuario> list(){
-        return bancoRepository.findAll();
+        return usuarioRepository.findAll();
     }
 
     //Método Show
     @GetMapping("/{id}")
     public Usuario show(@PathVariable Long id){
-        return bancoRepository.getById(id);
+        return usuarioRepository.getById(id);
     }
 
     //Método Save
     public Usuario save(@RequestBody Usuario usuario){
-        return bancoRepository.save(usuario);
+        return usuarioRepository.save(usuario);
     }
 
     //Método Update
     @PutMapping("/id")
     public Usuario update(@PathVariable Long id, @RequestBody Usuario usuario){
-        Usuario usuarioAux = bancoRepository.getById(id);
+        Usuario usuarioAux = usuarioRepository.getById(id);
         usuarioAux.setNome(usuario.getNome());
         usuarioAux.setAdmin(usuario.getAdmin());
         usuarioAux.setCarga_de_trabalho(usuario.getCarga_de_trabalho());
         usuarioAux.setTempo_de_almoco(usuarioAux.getCarga_de_trabalho());
-        return bancoRepository.save(usuarioAux);
+        return usuarioRepository.save(usuarioAux);
     }
 
     //Método Delete
     @DeleteMapping("/{id}")
     public void delete(@PathVariable Long id){
-        bancoRepository.deleteById(id);
+        usuarioRepository.deleteById(id);
     }
 
 }
